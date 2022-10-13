@@ -1,0 +1,111 @@
+body {
+    background: rgb(48, 55, 55);
+    /* background: linear-gradient(0deg, rgba(66,142,143,1) 0%, rgba(54,51,47,1) 59%); */
+    scroll-behavior: smooth;
+}
+
+.spinner {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .spinner:after {
+    content: ' ';
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    z-index: 1;
+    border-radius: 50%;
+    border: 6px solid rgb(119, 41, 83);
+    border-color: rgb(119, 41, 83) transparent rgb(119, 41, 83) transparent;
+    animation: spinner 1.2s linear infinite;
+  }
+
+  .image_container{
+    position: relative;
+    display: flex;
+
+  }
+
+  .vr{
+
+    padding: 5px;
+  }
+  .align_date{
+    font-size: 10px;
+    position: absolute;
+    right: 10px;
+    top:50px;
+  }
+  .msg_area{
+    height: 450px;
+    overflow: auto;
+  }
+  .my-card{
+    overflow: auto;
+    /* min-width: 990px; */
+    min-height: 700px;
+  }
+  .avatar{
+    width: 60px;
+    display: inline-block;
+    margin: 5px 0px;
+  }
+  .pics{
+    width: 80px;
+    margin: 10px 0px;
+  }
+  .pics img{
+    width: 100%;
+    border-radius: 50%;
+  }
+  .avatar img{
+    border-radius: 50%;
+  }
+
+  .friendbox{
+    height: 500px;
+    overflow: auto;
+  }
+
+  .about_text{
+    overflow: hidden;
+    white-space: nowrap;
+    
+  }
+
+
+  .chat_item{
+    cursor: pointer;
+    transition: 0.4s ease-in;
+  }
+  .chat_item:hover{
+    background-color: rgb(29, 27, 27);
+  }
+
+  
+
+  #dropdown-button-dark-example1{
+    padding: 0;
+    margin: 0;
+  }
+  .remove_image{
+    position: absolute;
+    left:80px;
+    border:none;
+    border-radius: 50%;
+  }
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+@media screen  and (max-width:767px){
+    .vr{
+        display: none;
+    }
+}
